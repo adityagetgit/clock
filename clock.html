@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <div id="main">
+        <div class="one">
+            <div class="para">
+                <p id="text"></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script>
+    var clock = () =>{
+        let time = new Date().toLocaleTimeString();
+        document.getElementById("text").innerText = time;
+    };
+    setInterval(clock, 1000);
+</script>
+</html>
